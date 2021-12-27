@@ -371,7 +371,7 @@ export default function Chart() {
 
   return (
 
-    <div ref={mycanvas} class="h-70"></div>
+    <div ref={mycanvas} class="h-80"></div>
   );
 }
 

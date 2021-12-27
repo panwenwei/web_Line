@@ -1,0 +1,20 @@
+date  日期
+code  证券代码
+open  开盘价
+high  追高价
+low   最低价
+close 收盘价
+perclose 上一日收盘价
+volume 成交量（股）
+amount 成交额（￥）
+turn 换手率
+pctChg 涨跌幅
+
+
+code:代码
+chg:涨跌价（价格￥）
+current:当前价格
+turn:换手
+<!-- increment:长点加 -->
+percent:涨跌幅（%）
+name：股票名称

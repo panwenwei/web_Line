@@ -33,8 +33,8 @@ export default function Finance() {
     </div>
     <div class="grid grid-cols-24 gap-4 mt-4">
       <div class="col-span-9 shadow inline-block">
-          <div class="flex justify-between h-10 bg-rose-500  text-white">
-            <div class="pl-4 flex items-center">板块</div>
+          <div class="flex justify-between pl-4 h-12 border-b">
+            <div class=" flex items-center text-gray-900">板块</div>
           </div>
           <Table></Table>
       </div>

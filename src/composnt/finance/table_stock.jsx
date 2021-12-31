@@ -10,7 +10,7 @@ for( let i =0;i<26;i++){
     turn:'12.2',
     tradestatus:'1',
     volume:'123',
-    title: 'Regional',
+    amplitude: 'Regional',
     department: 'Opti',
     role: 'Admin',
     email: 'jane.',
@@ -25,19 +25,25 @@ export default function Table() {
               scope="col"
               className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
-              板块
+              个股
             </th>
             <th
               scope="col"
               className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
-              涨跌幅
+              价格
             </th>
             <th
               scope="col"
               className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
-              涨跌速
+              涨幅
+            </th>
+            <th
+              scope="col"
+              className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            >
+              涨速
             </th>
             <th
               scope="col"
@@ -49,13 +55,19 @@ export default function Table() {
               scope="col"
               className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
-              成交额
+              换手率
             </th>
             <th
               scope="col"
               className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
-              总市值
+              流通值
+            </th>
+            <th
+              scope="col"
+              className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            >
+              股东数
             </th>
           </tr>
         </thead>
@@ -66,6 +78,7 @@ export default function Table() {
                 <div className="flex items-start">
                   <div>
                     <div className="text-sm font-medium text-gray-900">{person.name}</div>
+                    <div className="text-sm text-gray-500">{person.code}</div>
                   </div>
                 </div>
               </td>
@@ -73,6 +86,12 @@ export default function Table() {
                 <div className="text-sm text-red-500">{person.department}</div>
               </td>
               <td className="px-4 py-2 whitespace-nowrap">
+                <div className="text-sm text-red-500">{person.department}</div>
+              </td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">
+                <div className="text-sm text-red-500">{person.department}</div>
+              </td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">
                 <div className="text-sm text-red-500">{person.department}</div>
               </td>
               <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">
